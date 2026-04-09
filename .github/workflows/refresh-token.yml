@@ -9,6 +9,10 @@ on:
 permissions:
   contents: read
 
+env:
+  # Forza le JS actions a girare su Node 24 (Node 20 è deprecato da giugno 2026).
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
 jobs:
   refresh:
     runs-on: ubuntu-latest

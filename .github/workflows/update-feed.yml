@@ -13,6 +13,10 @@ concurrency:
   group: update-feed
   cancel-in-progress: false
 
+env:
+  # Forza le JS actions a girare su Node 24 (Node 20 è deprecato da giugno 2026).
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
 jobs:
   update:
     runs-on: ubuntu-latest
